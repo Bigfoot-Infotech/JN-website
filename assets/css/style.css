@@ -24,6 +24,10 @@ img, svg {vertical-align: middle;}
 .menu-section .navbar-brand{font-size: 30px; color: #fff; font-weight: 900; text-transform: uppercase; 
   letter-spacing: 1px;}
 .menu-section .navbar-brand img{width: 260px;}
+.menu-section .navbar-brand{background-image: url(../images/logo-bg.png); width: 355px; height: 112px;
+  background-repeat: no-repeat; background-size: 260px; margin-top: 10px;}
+.menu-section.sticky .navbar-brand{background-image: url(../images/logo.png); width: 200px; height: 82px;
+  background-repeat: no-repeat; background-size: 172px; margin-top: 10px;}
 .menu-section.sticky .navbar-brand img{width: 180px;}
 .menu-section .nav-item:first-child{padding-left: 0px;}
 .menu-section .nav-item:last-child{border-right: none; padding-right: 0px;}
@@ -37,7 +41,7 @@ img, svg {vertical-align: middle;}
 /*Banner Section CSS*/
 .banner-section .banner-video {height: 660px; overflow: hidden;}
 .banner-section .banner-video:after {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0;
-   right: 0; background: rgb(0 0 0 / 76%);}
+   right: 0; /*background: rgb(0 0 0 / 76%);*/}
 .banner-section .carousel-item {height: 624px; overflow: hidden;}
 .banner-section .carousel-item .carousel-caption{top: 40%;}
 .banner-section .videoBtn {display: inline-block; color: #fff; 
@@ -196,8 +200,8 @@ img, svg {vertical-align: middle;}
 .partner-section .section-title p {max-width: 690px; font-size: 18px; letter-spacing: .5px;
   margin-top: 10px; margin-left: auto; margin-right: auto; color: #d9d9d9;}
 .partner-section .image{margin-bottom: 30px; text-align: center; border-radius: 0 50px 0 0;}
-.partner-section .image a {display: block; background-color: #06224a; border-radius: 0 50px 0 0;
-  padding: 20px;}
+.partner-section .image a {display: block; background-color: #ffffff; border-radius: 0 50px 0 0;
+  padding: 20px; height: 200px; line-height: 185px;}
 .partner-section .image a img {transition: .5s;}
 .partner-section .image a:hover img {transform: scale(.9);}
 
@@ -218,16 +222,40 @@ img, svg {vertical-align: middle;}
  margin-right: auto;}
 .gallery-section .gallery-shape1 {position: absolute; right: 0; top: 60%; transform: translateY(-66%);
   z-index: -1;}
-.gallery-section .gallery-shape1 img {height: 550px; width: auto;}
-
-.gallery-section .image{height: 550px; overflow: hidden;}
+.gallery-section .gallery-shape1 img {height: 550px; width: auto; transition: all .3s ease 0s;}
+.gallery-section .image a:hover img {transform: scale(1.2); transition: all .3s ease 0s;}
+.gallery-section .image{height: 550px; overflow: hidden; transition: all .3s ease 0s;}
 .gallery-section .image a{margin-bottom: 30px; text-align: center; position: relative; display: block;
   -webkit-clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
-  clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);}
+  clip-path: polygon(0 10%,100% 0,100% 100%,0 100%); transition: all .3s ease 0s;}
 .gallery-section .image a:before {content: ""; position: absolute; left: 0; top: 0; width: 100%;
   height: 100%; background-color: #161616; opacity: .4; transition: .5s; z-index: 1;}
 .gallery-section .image img {display: block; width: 100%;
-  -webkit-transform-style: preserve-3d;}
+  -webkit-transform-style: preserve-3d; transition: all .3s ease 0s;}
+
+
+
+/*Video Gallery Section CSS*/
+.video-gallery-section{position: relative; z-index: 1; padding-top: 80px; padding-bottom: 50px;}
+.video-gallery-section .container{border-top: 1px solid #ffffff38; padding-top: 80px;}
+.video-gallery-section .section-title {position: relative; text-align: center; max-width: 720px;
+ margin-left: auto; margin-right: auto; margin-bottom: 55px;}
+ .video-gallery-section .section-title h2 {margin-bottom: 0; text-transform: uppercase; font-size: 40px;
+  font-weight: 600;}
+.video-gallery-section .section-title p {max-width: 690px; font-size: 18px; letter-spacing: .5px;
+  margin-top: 10px; margin-left: auto; margin-right: auto;}
+.video-gallery-section .VideoGallerySection{text-align: center; max-width: 100%;
+ margin-right: auto;}
+.video-gallery-section .gallery-shape1 {position: absolute; right: 0; top: 60%; transform: translateY(-66%);
+  z-index: -1;}
+.video-gallery-section .gallery-shape1 img {height: auto; width: auto; transition: all .3s ease 0s;}
+.video-gallery-section .video a:hover img {transform: scale(1.2); transition: all .3s ease 0s;}
+.video-gallery-section .video{height: auto; overflow: hidden; transition: all .3s ease 0s;}
+.video-gallery-section .video a{margin-bottom: 30px; text-align: center; position: relative; display: block;
+  -webkit-clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
+  clip-path: polygon(0 10%,100% 0,100% 100%,0 100%); transition: all .3s ease 0s;}
+.video-gallery-section .video img {display: block; width: 100%;
+  -webkit-transform-style: preserve-3d; transition: all .3s ease 0s;}
 
 
 
@@ -360,7 +388,7 @@ img, svg {vertical-align: middle;}
 .page-banner-section .image:after {content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0;
    right: 0; background: rgb(6 34 74 / 72%);}
 
-.page-banner-section .caption{position: absolute; top: 45%; left: 47%; text-align: center; z-index: 11;}
+.page-banner-section .caption{position: absolute; top: 45%; left: 45%; text-align: center; z-index: 11;}
 .page-banner-section .caption h1{color: #fff; font-size: 46px; text-transform: uppercase;
   font-weight: 800;}
 .page-banner-section .caption ul{padding: 0px;}
@@ -373,7 +401,31 @@ img, svg {vertical-align: middle;}
 
 /*Merch Page CSS*/
 .merch-page-section{padding-top: 0px;}
+.merch-page-section .section-title {text-align: left; max-width: 100%;}
+.merch-page-section .section-title .input{border: 0; outline: none; color: #06224a;}
+.search_wrap .search_box{position: relative; height: 60px;}
+.merch-page-section .section-title .search_wrap .search_box .input{position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; padding: 10px 20px; border-radius: 3px; font-size: 18px;}
+.merch-page-section .section-title .search_wrap .search_box .btn{position: absolute; top: 0; right: 0; width: 60px;
+  height: 100%; background: #06224a; z-index: 1; cursor: pointer;}
+.merch-page-section .section-title .search_wrap .search_box .btn:hover{background: #ec1c24;}
+.merch-page-section .section-title .search_wrap .search_box .btn.btn_common .fas{position: absolute; top: 50%;
+  left: 50%; transform: translate(-50%,-50%); color: #fff; font-size: 20px;}
+.merch-page-section .section-title .search_wrap.search_wrap_6 .search_box .input{ border-radius: 50px;}
+.merch-page-section .section-title .search_wrap.search_wrap_6 .search_box .btn{width: 125px; height: 45px; top: 8px;
+  right: 5px; border-radius: 3px; color: #fff; display: flex; align-items: center; justify-content: center;}
+.merch-page-section .section-title .search_wrap.search_wrap_6 .search_box .btn{border-radius: 25px;}
+.merch-page-section .section-title .search_wrap.search_wrap_6 .search_box .btn p{margin-top: 18px;}
+.merch-page-section .section-title .search_wrap.search_wrap_6 .search_box .input{padding-right: 145px;}
+
 .merch-page-section .merch-box{margin-bottom: 40px;}
+.merch-page-section .merch-box .box .content h3 {font-size: 22px;}
+.merch-page-section .merch-box .box .image {height: 300px;}
+.merch-page-section .merch-box .box .content p {font-size: 16px;}
+.merch-page-section .merch-box .box .content .shop-now-btn {padding: 8px 22px 4px; font-size: 15px;}
+
+.merch-page-section .advertise-section .image{margin-bottom: 30px;}
+.merch-page-section .advertise-section .image img{width: 100%;}
 
 
 
