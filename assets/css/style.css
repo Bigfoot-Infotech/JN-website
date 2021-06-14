@@ -207,6 +207,9 @@ img, svg {vertical-align: middle;}
 .partner-section .image a img {transition: .5s;}
 .partner-section .image a:hover img {transform: scale(.9);}
 
+.sponser-partner-section{background-image: url(../images/sponser-bg.jpg); background-size: cover;
+    height: 580px; background-attachment: fixed; position: relative;}
+
 
 
 
@@ -434,6 +437,20 @@ img, svg {vertical-align: middle;}
 /*Gallery Page CSS*/
 .gallery-page-section{padding-top: 0px;}
 .gallery-page-section .image{margin-bottom: 40px;}
+.gallery-page-section ul.nav {padding: 0; margin-top: 3rem; margin-bottom: 0; display: block;}
+.gallery-page-section ul li {list-style: none; display: inline-block;}
+.gallery-page-section ul li button.active {background: #ec1c24; color: #fff;}
+.gallery-page-section ul li button {background: #fff; color: #06224a; font-size: 1.5rem; padding: 0.4rem 2.5rem;
+    -webkit-transition: all 0.3s linear; transition: all 0.3s linear; outline: none; position: relative;
+    z-index: 1; overflow: hidden; display: inline-block; border: none; margin-bottom: .5rem}
+.gallery-page-section ul li button::before {content: ''; position: absolute; top: 0; left: 0;
+    background: #ec1c24; width: 100%; height: 100%; -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); -webkit-transition: all 0.3s linear; transition: all 0.3s linear;}
+.gallery-page-section ul li button:hover::before {-webkit-transform: translateX(0); transform: translateX(0);
+    z-index: -1; -webkit-transition: all 0.3s linear; transition: all 0.3s linear;}
+.gallery-page-section ul li button:hover{color: #fff;}
+
+
 
 
 
