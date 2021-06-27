@@ -24,7 +24,7 @@ img, svg {vertical-align: middle;}
 .menu-section .navbar-brand{font-size: 30px; color: #fff; font-weight: 900; text-transform: uppercase; 
   letter-spacing: 1px;}
 .menu-section .navbar-brand img{width: 260px;}
-.menu-section .navbar-brand{background-image: url(../images/logo-bg.png); width: 355px; height: 112px;
+.menu-section .navbar-brand{background-image: url(../images/logo.jpg); width: 355px; height: 112px;
   background-repeat: no-repeat; background-size: 260px; margin-top: 10px;}
 .menu-section .next-navbar-brand{background-image: url(../images/logo.png); width: 355px; height: 112px;
   background-repeat: no-repeat; background-size: 260px; margin-top: 10px;}
