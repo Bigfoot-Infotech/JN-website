@@ -24,7 +24,7 @@ img, svg {vertical-align: middle;}
 .menu-section .navbar-brand{font-size: 30px; color: #fff; font-weight: 900; text-transform: uppercase; 
   letter-spacing: 1px;}
 .menu-section .navbar-brand img{width: 260px;}
-.menu-section .navbar-brand{background-image: url(../images/logo.jpg); width: 355px; height: 112px;
+.menu-section .navbar-brand{background-image: url(../images/logo-bg.png); width: 355px; height: 112px;
   background-repeat: no-repeat; background-size: 260px; margin-top: 10px;}
 .menu-section .next-navbar-brand{background-image: url(../images/logo.png); width: 355px; height: 112px;
   background-repeat: no-repeat; background-size: 260px; margin-top: 10px;}
@@ -33,11 +33,14 @@ img, svg {vertical-align: middle;}
 .menu-section.sticky .navbar-brand img{width: 180px;}
 .menu-section .nav-item:first-child{padding-left: 0px;}
 .menu-section .nav-item:last-child{border-right: none; padding-right: 0px;}
-.menu-section .nav-item .nav-link{color: #fff; letter-spacing: 1px; padding: 10px 26px 6px 26px;
-	transition:all .3s ease 0s; text-transform: uppercase; font-size: 20px; font-weight: 500;}
-.menu-section .nav-item .nav-link:hover{background: #ec1c24; color: #fff; border-left: 1px solid #fff;
- transition:all .3s ease 0s}
-.menu-section .nav-item.active{color: #fff; background: #ec1c24;}
+.menu-section .nav-item .nav-link{color: #fff; letter-spacing: 1px;
+	transition:all .3s ease 0s; text-transform: uppercase; font-size: 20px; font-weight: 500;
+  clip-path: polygon(20% 0%,100% 0,80% 100%,0 100%); padding: 0.6rem 2rem; margin-bottom: -5px;}
+.menu-section .nav-item .nav-link:hover{background: #ec1c24; color: #fff;
+ transition:all .3s ease 0s; clip-path: polygon(20% 0%,100% 0,80% 100%,0 100%); 
+ padding: 0.6rem 2rem; margin-bottom: -5px;}
+.menu-section .nav-item.active{color: #fff; background: #ec1c24; 
+  clip-path: polygon(20% 0%,100% 0,80% 100%,0 100%);}
 
 
 /*Banner Section CSS*/
@@ -141,7 +144,7 @@ img, svg {vertical-align: middle;}
 
 
 /*Merch Section CSS*/
-.merch-section{padding: 80px 0px;}
+.merch-section{padding: 80px 0px; background-color: #061935;}
 .merch-section .section-title {position: relative; text-align: center; max-width: 720px;
  margin-left: auto; margin-right: auto; margin-bottom: 55px;}
  .merch-section .section-title h2 {margin-bottom: 0; text-transform: uppercase; font-size: 40px;
@@ -208,7 +211,7 @@ img, svg {vertical-align: middle;}
 .partner-section .image a:hover img {transform: scale(.9);}
 
 .sponser-partner-section{background-image: url(../images/sponser-bg.jpg); background-size: cover;
-    height: 580px; background-attachment: fixed; position: relative;}
+    height: 960px; background-attachment: fixed; position: relative;}
 
 
 
@@ -234,7 +237,7 @@ img, svg {vertical-align: middle;}
   -webkit-clip-path: polygon(0 10%,100% 0,100% 100%,0 100%);
   clip-path: polygon(0 10%,100% 0,100% 100%,0 100%); transition: all .3s ease 0s;}
 .gallery-section .image a:before {content: ""; position: absolute; left: 0; top: 0; width: 100%;
-  height: 100%; background-color: #161616; opacity: .4; transition: .5s; z-index: 1;}
+  height: 100%; background-color: #1616161a; opacity: .4; transition: .5s; z-index: 1;}
 .gallery-section .image img {display: block; width: 100%;
   -webkit-transform-style: preserve-3d; transition: all .3s ease 0s;}
 
