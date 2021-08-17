@@ -342,24 +342,34 @@
         <h1>Our Strength</h1>
       </div>
       <div class="row">
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://www.nocnepal.org.np/" target="_blank"><img src="assets/images/NOC-logo.jpg" width="100%"></a>
+        <div class="owl-carousel owl-theme OurStrength">
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://www.nocnepal.org.np/" target="_blank"><img src="assets/images/NOC-logo.jpg" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://nocnepal.org.np/nepal-triathlon-association" target="_blank"><img src="assets/images/NTA-logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://nocnepal.org.np/nepal-triathlon-association" target="_blank"><img src="assets/images/NTA-logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="http://www.riddhisiddhicements.com/" target="_blank"><img src="assets/images/Riddhi-Siddhi-Logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="http://www.riddhisiddhicements.com/" target="_blank"><img src="assets/images/Riddhi-Siddhi-Logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://tvsmotors.com.np/" target="_blank"><img src="assets/images/TVS-Logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://tvsmotors.com.np/" target="_blank"><img src="assets/images/TVS-Logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -368,24 +378,34 @@
         <h1>Our Spine</h1>
       </div>
       <div class="row">
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://www.nocnepal.org.np/" target="_blank"><img src="assets/images/NOC-logo.jpg" width="100%"></a>
+        <div class="owl-carousel owl-theme OurSpine">
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://www.nocnepal.org.np/" target="_blank"><img src="assets/images/NOC-logo.jpg" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://nocnepal.org.np/nepal-triathlon-association" target="_blank"><img src="assets/images/NTA-logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://nocnepal.org.np/nepal-triathlon-association" target="_blank"><img src="assets/images/NTA-logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="http://www.riddhisiddhicements.com/" target="_blank"><img src="assets/images/Riddhi-Siddhi-Logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="http://www.riddhisiddhicements.com/" target="_blank"><img src="assets/images/Riddhi-Siddhi-Logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="image">
-            <a href="https://tvsmotors.com.np/" target="_blank"><img src="assets/images/TVS-Logo.png" width="100%"></a>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <a href="https://tvsmotors.com.np/" target="_blank"><img src="assets/images/TVS-Logo.png" width="100%"></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -856,6 +876,56 @@
       })
     </script>
 
+    <script>
+      $(document).ready(function() {
+        var owl = $('.OurStrength');
+        owl.owlCarousel({
+          items: 4,
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 1500,
+          autoplayHoverPause: true,
+          responsive:{
+            0:{items:1},
+            600:{items:3},
+            1000:{items:4}
+          }
+        });
+        $('.play').on('click', function() {
+          owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function() {
+          owl.trigger('stop.owl.autoplay')
+        })
+      })
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        var owl = $('.OurSpine');
+        owl.owlCarousel({
+          items: 4,
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 1500,
+          autoplayHoverPause: true,
+          responsive:{
+            0:{items:1},
+            600:{items:3},
+            1000:{items:4}
+          }
+        });
+        $('.play').on('click', function() {
+          owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function() {
+          owl.trigger('stop.owl.autoplay')
+        })
+      })
+    </script>
+    
     <script>
       $(document).ready(function() {
         var owl = $('.OurMerch');
